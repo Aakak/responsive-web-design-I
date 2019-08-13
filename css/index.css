@@ -3,71 +3,151 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
 }
-
-
-
-
-
-
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
@@ -75,35 +155,33 @@ h1, h2, h3, h4, h5 {
   width: 80%;
   max-width: 880px;
   margin: 0 auto;
-
-} 
+}
 
 /* Header */
 
 header .nav-bar .nav-section {
   display: flex;
-	width: 80%;
-	max-width: 880px;
-	padding: 40px 0;
-	align-items: center;
-	justify-content: space-between;
-	align-self: center;
-	margin: 0 auto;
+  width: 80%;
+  max-width: 880px;
+  padding: 40px 0;
+  align-items: center;
+  justify-content: space-between;
+  align-self: center;
+  margin: 0 auto;
 }
 
-
- header .nav-bar nav {
+header .nav-bar nav {
   justify-content: space-between;
 }
 
- header  nav  a {
-  margin-right: 65px; 
+header nav a {
+  margin-right: 65px;
   font-size: 16px;
   color: gray;
   text-decoration: none;
 }
 
- nav .logo {
+nav .logo {
   justify-content: flex-start;
   margin-top: 15px;
 }
@@ -111,14 +189,14 @@ header .nav-bar .nav-section {
 /* Welcome Section */
 
 .welcome {
-	display: flex;
+  display: flex;
 }
 
 .welcome .welcome-text {
   font-size: 77px;
   margin-top: 120px;
   text-align: center;
-  padding: 0px 75px; 
+  padding: 0px 75px;
 }
 
 .welcome .welcome-text button {
@@ -127,7 +205,6 @@ header .nav-bar .nav-section {
   font-size: 17px;
   border: 1px solid grey;
 }
-
 
 .welcome img {
   margin-top: 69px;
@@ -165,192 +242,143 @@ header .nav-bar .nav-section {
   margin-right: 12px;
 }
 
-
 .contact {
   margin-top: 57px;
   border-top: 1px solid black;
   padding: 39px 10px 0;
 }
 
-
 .contact p {
   margin: 20px 0;
 }
 
-footer p{
+footer p {
   margin: 32px 0;
   text-align: center;
   font-size: 14px;
 }
 
-
-
 /*********** Madia Queries *********/
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
 
-/* Tablet View */
-@media screen and (max-width: 800px){
-      header .nav-section {
-          display: flex;
-          flex-direction: column-reverse;
-          justify-content: center;
-      }
-      .nav-bar .nav-section{
-          width: 100%;
-          padding-bottom: 40px;
-      }
+@media (min-width: 768px) and (max-width: 1024px) {
+  header .nav-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    .nav-bar .nav-section nav{
-        padding-top: 20px;
-       
-    }
+  }
 
-    .welcome img{
-        display: none;
-    }
+  .welcome img {
+    display: none;
+  }
 
-    .welcome .welcome-text{
-        align-self: center;
-        align-content: center;
-        width: 100% !important;
-        max-height: 220px;
-      
-    }
-    }
+  .welcome .welcome-text {
+    align-self: center;
+    align-content: center;
+    width: 100% !important;
+    /* max-height: 220px; */
+  }
+}
 
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
 
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  header .nav-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .welcome img {
+    display: none;
+  }
 
+  .welcome .welcome-text {
+    align-self: center;
+    align-content: center;
+    width: 100% !important;
+  }
+}
 
+/* 
+@media screen and (max-width: 800px) {
 
-
+} */
 
 /* Moblie View */
-@media screen and (max-width: 500px){
-    .nav-section {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-     
-    }
+@media screen and (max-width: 500px) {
+  header .nav-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    .nav-section .nav-bar{
-      width: 100%;
-      padding: 0;
-    }
-    
-    .nav-bar .nav-section nav {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-    }
-   
-    .nav-bar .nav-section nav a {
-      padding: 15px 0;
-      margin: 0;
-      width: 100%;
-      text-align: center;
-      border-bottom: 1px solid rgb(185, 186, 187);
+  }
+
+  .welcome img {
+    display: none;
+  }
+
+  .welcome .welcome-text {
+    align-self: center;
+    align-content: center;
+    width: 100% !important;
+  }
+/*   
+  .nav-section {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .nav-section .nav-bar {
+    width: 100%;
+    padding: 0;
+  }
+
+  .nav-bar .nav-section nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-bar .nav-section nav a {
+    padding: 15px 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgb(185, 186, 187);
   }
 
   .nav-bar .nav-section .logo {
     border-bottom: 1px solid rgb(185, 186, 187);
     width: 100%;
+  }
+
+  .welcome img {
+    display: none;
+  }
+
+  .welcome .welcome-text {
+    align-self: center;
+    align-content: center;
+    width: 100% !important;
+  }
+
+  .main-content .buttom-content .text-content {
+    flex-direction: column;
+  }
+
+  .text-content {
+    width: 100% !important;
+    padding: 20px 0;
+  } */
 }
-    
-.welcome img{
-  display: none;
-}
-
-.welcome .welcome-text{
-  align-self: center;
-  align-content: center;
-  width: 100% !important;
-  max-height: 220px;
-
-}
-
-.main-content .buttom-content .text-content{
-  flex-direction: column;
-}
-.text-content {
-      width: 100% !important;
-      padding: 20px 0;
-}
-}
-    
-/* @media screen and (max-width: 500px) {
-  .nav-container {
-      display: flex;
-      flex-direction: column-reverse;
-      justify-content: center;
-  }
-
-  .navigation-bar .nav-container {
-      width: 100%;
-      padding: 0;
-  }
-
-  .navigation-bar .nav-container nav {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      padding: 0;
-      margin: 0;
-  }
-
-  .navigation-bar .nav-container div {
-      border-bottom: 1px solid rgb(185, 186, 187);
-      width: 100%;
-  }
-
-  .navigation-bar .nav-container nav a {
-      padding: 15px 0;
-      margin: 0;
-      width: 100%;
-      text-align: center;
-      border-bottom: 1px solid rgb(185, 186, 187);
-  }
-
-  .fortypercent {
-      display: none;
-  }
-
-  .sixtypercent {
-      align-self: center;
-      align-content: center;
-      width: 100% !important;
-      max-height: 220px;
-      margin-top: 150px;
-  }
-
-  .details, .offerings {
-      flex-direction: column;
-  }
-
-  .details .features, .details .about, .offerings div {
-      width: 100% !important;
-      padding: 20px 0;
-  }
-
-  .service-header {
-      display: none;
-  }
-
-  .services-heading-section {
-      padding-top: 250px;
-  }
-
-  .services-section .service {
-      width: 100%;
-  }
-
-  .section-facts {
-      flex-direction: column;
-  }
-
-  .section-facts div, .section-facts img {
-      width: 100%;
-  }
-} */
